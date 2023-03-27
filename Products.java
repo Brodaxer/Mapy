@@ -1,3 +1,4 @@
+import java.util.Comparator;
 import java.util.Objects;
 
 class Products {
@@ -46,5 +47,28 @@ class Products {
     @Override
     public int hashCode() {
         return Objects.hash(category, name, price);
+    }
+
+//    @Override
+//    public int compareTo(Products o) {
+//        if (hashCode()>o.hashCode()){
+//            return 1;
+//        }else if (hashCode()<o.hashCode()){
+//            return -1;
+//        }else {
+//            return 0;
+//        }
+//
+//    }
+//    public static class CategoryNameComparator implements Comparator<Products>{
+//        @Override
+//        public int compare(Products p1,Products p2){
+//            return p1.category.compareTo(p2.category);
+//        }
+//    }
+
+    @Override
+    public String toString() {
+        return category + " " + name + " " + price;
     }
 }
