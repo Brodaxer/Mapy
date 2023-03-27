@@ -53,7 +53,7 @@ class ProductContainers {
         return products;
     }
 
-    public Products mostChipest(String sc) {
+    public Products Chipest(String sc) {
         double chipest = mapFromFile.get(sc).get(0).getPrice();
         Products products = mapFromFile.get(sc).get(0);
         for (int i = 0; i < mapFromFile.get(sc).size(); i++

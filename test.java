@@ -6,6 +6,6 @@ public class test {
         System.out.println(costam.printProductsOfCategory(sc));
         System.out.println("Srdenia cena produktow: "+ costam.averagePriceOfProducts(sc));
         System.out.println("Najdrozszy produkt to: "+ costam.mostExpensive(sc).getName() +" : "+ costam.mostExpensive(sc).getPrice());
-        System.out.println("Najtansszy produkt to: "+ costam.mostChipest(sc));
+        System.out.println("Najtansszy produkt to: "+ costam.Chipest(sc));
     }
 }
